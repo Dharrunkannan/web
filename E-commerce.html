@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppify</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .nav-section1 {
+            padding: 2px 15px 2px 15px;
+            display: flex;
+            height: 60px;
+
+            background-color: rgba(36, 27, 24, 0.959);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            border: 1px solid black;
+
+        }
+
+        .navbar-search {
+            display: flex;
+        }
+
+        .nav-search {
+
+            width: 500px;
+            height: 50px;
+
+        }
+
+        .search-icon {
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+
+
+        }
+
+        .nav-lang {
+            height: 30px;
+            color: white;
+            background-color: transparent;
+
+        }
+
+        .navbar-language span {
+            font-size: large;
+            color: white;
+
+        }
+
+        .signin-btn {
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .navbar-menu {
+
+            display: flex;
+            align-items: center;
+
+            background-color: #0000009c;
+            height: 30px;
+
+            padding-left: 10px;
+            color: white;
+            font-weight: bolder;
+            justify-content: space-around;
+            box-shadow: 0px 1px 10px rgb(202, 187, 187);
+
+        }
+
+        .navbar-cart img {
+            filter: invert(1);
+        }
+
+
+        /* *************************************************************************** */
+
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+
+        }
+
+        .dropdown a {
+
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .dropdown-content {
+            display: none;
+
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            color: black;
+        }
+
+        .drop-span {
+            display: flex;
+            padding: 5px;
+        }
+
+        /* ************************************************************************************ */
+        .card {
+            margin-top: 50px;
+            display: inline-flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-section1">
+
+            <div class="navbar-logo">
+
+                <img class="nav-logo" src="/logo.jpg" alt="">
+            </div>
+            <div class="navbar-search">
+                <input class="nav-search" type="search" name="" id="" placeholder="search">
+                <button class="search-icon">
+                    <img src="./img/search-icon.png" alt="search-icon" width="50px">
+                </button>
+            </div>
+            <div class="navbar-language">
+
+
+                <span>Lang</span>
+                <select class="nav-lang" name="language" id="">
+                    <option value="Marathi">MR</option>
+                    <option value="Marathi">EN</option>
+                    <option value="Marathi">HN</option>
+                </select>
+            </div>
+
+            <div class="navbar-signin">
+
+                <button class="signin-btn">Sign in</button>
+            </div>
+            <div class="navbar-cart">
+                <img src="./img/cart.png" alt="my cart" width="40px">
+            </div>
+        </div>
+
+        <div class=" navbar-menu ">
+
+
+            <div class="dropdown">
+                <span>All</span>
+                <div class="dropdown-content">
+                    <span class="drop-span"> <a href="#">Mobile</a></span>
+                    <span class="drop-span"> <a href="#">Electromins</a></span>
+                    <span class="drop-span"> <a href="#">Sell</a></span>
+                    <span class="drop-span"> <a href="#">Best Sellers </a></span>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span>Electronics</span>
+                <div class="dropdown-content">
+                    <span class="drop-span"> <a href="#">Accessories</a></span>
+                    <span class="drop-span"> <a href="#">Mobiles & Accessories</a></span>
+                    <span class="drop-span"> <a href="#">Home Audio </a></span>
+                    <span class="drop-span"> <a href="#">Computers & Accessories </a></span>
+                    <span class="drop-span"> <a href="#">Tablets</a></span>
+                    <span class="drop-span"> <a href="#">Home Theater, TV &</a></span>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span>Mobile</span>
+                <div class="dropdown-content">
+                    <span class="drop-span"> <a href="#">Samsung</a></span>
+                    <span class="drop-span"> <a href="#">Apple</a></span>
+                    <span class="drop-span"> <a href="#">OnePlus </a></span>
+                    <span class="drop-span"> <a href="#">Redmi </a></span>
+                    <span class="drop-span"> <a href="#">Realme</a></span>
+                    <span class="drop-span"> <a href="#">Mobile Accessories</a></span>
+                    <span class="drop-span"> <a href="#">Smartwatches</a></span>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span>Clothing</span>
+                <div class="dropdown-content">
+                    <span class="drop-span"> <a href="#">	Nike</a></span>
+                    <span class="drop-span"> <a href="#">Pepe Jeans</a></span>
+                    <span class="drop-span"> <a href="#">FabIndia </a></span>
+                    <span class="drop-span"> <a href="#">Flying Machine </a></span>
+                    <span class="drop-span"> <a href="#">Levi’s</a></span>
+                    <span class="drop-span"> <a href="#">Zara</a></span>
+                    <span class="drop-span"> <a href="#">Allen Solly</a></span>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <span> <a href="#">Customer Service</a> </span>
+                <div class="dropdown-content">
+                    <span class="drop-span"> <a href="#">Call at 1800 00 100</a></span>
+
+                </div>
+
+            </div>
+            <div class="dropdown">
+                <span> <a href="#">Today's Deals</a> </span>
+
+            </div>
+
+            <div class="dropdown">
+                <span> <a href="#">Sell</a> </span>
+
+            </div>
+            <div class="dropdown">
+                <span><a href="#">Best Sell</a> </span>
+            </div>
+            <div class="dropdown">
+                <span> <a href="#">50% offers</a></span>
+            </div>
+            <div class="dropdown">
+                <span> <a href="#">New</a></span>
+            </div>
+        </div>
+
+
+
+    </nav>
+    <section>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+  
+        </div>
+        
+        
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+       
+
+    </section>
+
+    <section>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+  
+        </div>
+        
+        
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+        <div class="card">
+
+            <img src="./img/image1.jpg" alt="">
+        </div>
+       
+
+    </section>
+
+
+</body>
+
+</html>
